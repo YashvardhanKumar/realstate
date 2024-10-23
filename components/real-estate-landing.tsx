@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Home, Search, MapPin, Phone, Mail } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function RealEstateLandingComponent() {
   return (
@@ -60,7 +61,7 @@ export function RealEstateLandingComponent() {
               {[1, 2, 3].map((i) => (
                 <Card key={i}>
                   <CardContent className="p-4">
-                    <img
+                    <Image
                       alt="Property"
                       className="w-full h-48 object-cover rounded-md mb-4"
                       height="200"
@@ -101,7 +102,7 @@ export function RealEstateLandingComponent() {
                       and always available to answer our questions."
                     </p>
                     <div className="flex items-center">
-                      <img
+                      <Image
                         alt="Client"
                         className="rounded-full mr-4"
                         height="40"
